@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="93aa5432-204e-4289-a35e-6c6c70aedde7" name="first_db@localhost Mapping">
+      <data-sources db="8da68c8d-7dd1-4318-94d6-ddec3238c74b" ddl="7cb933a2-aa00-4576-b3f8-314db8cd39ed" />
+    </mapping>
+  </component>
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="7cb933a2-aa00-4576-b3f8-314db8cd39ed" />
+          <option name="name" value="first_db@localhost (DDL)" />
+          <option name="languageId" value="PostgreSQL" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$" />
+            </array>
+          </option>
+        </State>
+      </list>
+    </option>
+  </component>
+</project>

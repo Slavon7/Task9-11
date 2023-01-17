@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://thymeleaf.org ">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit person</title>
+</head>
+<body>
+
+<form th:method="PATCH" th:action="@{/editing/{employee_id}(employee_id=${employee.getEmployeeId()})}" th:object="${employee}">
+  <label for="name">Enter name:</label>
+  <input type="text" th:field="*{name}" id="name">
+  <div style="color: crimson" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name error</div>
+  <br/>
+  <label for="position" >Enter position:</label>
+  <input type="text" th:field="*{position}" id="position">
+  <div style="color: crimson" th:if="${#fields.hasErrors('position')}" th:errors="*{position}">Position error</div>
+  <br/>
+  <label for="salary" >Enter salary:</label>
+  <input type="text" th:field="*{salary}" id="salary">
+  <div style="color: crimson" th:if="${#fields.hasErrors('salary')}" th:errors="*{salary}">Salary error</div>
+  <br/>
+  <input type="submit" value="Update!">
+</form>
+
+</body>
+</html>

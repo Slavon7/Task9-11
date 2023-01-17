@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://thymeleaf.org ">
+<head>
+  <meta charset="UTF-8">
+  <title>Show Project</title>
+</head>
+<body>
+
+<div th:each="project : ${showProject}">
+  <em th:text="${project.getProjectName()}">User</em>
+</div>
+
+<br/>
+<hr/>
+
+<a href="/LessonJDBCTemplate_war_exploded/editing">Back</a>
+
+
+</body>
+</html>
